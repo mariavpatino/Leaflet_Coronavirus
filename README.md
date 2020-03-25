@@ -41,7 +41,10 @@ In this exercise, you can visualize COVID-19 cases in Colombia until March 25, 2
 
 ## Visualizations
 
+* Cases in Colombia
+
 ![CasesColombia](Img/Cases_Colombia_March252020.PNG)
 
+* Heatmap
 
-![CasesColombia](Img/Heatmap_Colombia_March252020.PNG)
+![HeatmapColombia](Img/Heatmap_Colombia_March252020.PNG)
