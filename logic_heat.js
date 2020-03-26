@@ -13,7 +13,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: API_KEY
 }).addTo(map);
 
-  
+// Reading Data
 d3.json("March252020.json", function (response) {
     
     console.log(response);
@@ -37,23 +37,3 @@ d3.json("March252020.json", function (response) {
   
 });
   
- 
-// var legend = L.control({ position: 'bottomright' });
-
-// legend.onAdd = function (map) {
-
-//     var div = L.DomUtil.create('div', 'info legend'),
-//         richterScale = [0,10,100,500],
-//         labels = [];
-//     div.innerHTML += "<strong><p>Richter<br> Scale</p>"
-//     // loop through our density intervals and generate a label with a colored square for each interval
-//     for (var i = 0; i < richterScale.length; i++) {
-//         div.innerHTML +=
-//             '<i style="background:' + legendColor(richterScale[i]) + '"></i> ' +
-//             richterScale[i] + (richterScale[i + 1] ? '&ndash;' + richterScale[i + 1] + '<br>' : '+');
-//     }
-//     return div;
-// };
-
-// legend.addTo(map);
-

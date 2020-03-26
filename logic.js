@@ -11,7 +11,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: API_KEY
 }).addTo(myMap);
 
-// Country data
+// Departments data
 var departments = [
   {
     name: "Antioquia",
@@ -127,10 +127,10 @@ var departments = [
 ];
 
 
-// Loop through the cities array and create one marker for each city object
+// Loop through the departments array and create one marker for each department object
 for (var i = 0; i < departments.length; i++) {
 
-  // Conditionals for departments NumeroCasos
+  // Conditionals for departments Number of cases
   var color = "";
   if (departments[i].NumeroCasos < 10) {
     color = "#ffcc00";
@@ -172,6 +172,7 @@ function legendColor(cases) {
   }
 }
 
+// Legend
 var legend = L.control({ position: 'bottomright' });
 
 legend.onAdd = function (map) {
